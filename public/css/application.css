@@ -1,0 +1,79 @@
+html {
+  background-image: url("/images/grass.jpg");
+  width: 100%;
+}
+
+.title {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: -18px;
+  font-family: courier;
+  font-size: 60px;
+  padding-top: 25px;
+}
+
+body {
+  background-image: url("/images/gball.jpg");
+  padding-left: 30px;
+  font-family: courier;
+  width: 750px;
+  margin-left: 25%;
+  margin-right: 27%;
+  border-radius: 5%
+}
+
+.motto {
+  padding-top: -50px;
+  padding-bottom: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #cc0000;
+}
+
+.club {
+  font-size: 50px;
+
+}
+
+.container {
+  border-top: 2px black dashed;
+}
+
+.result {
+  margin-left: 25%;
+
+}
+
+.club {
+  margin-left: 25%;
+  font-size: 60px
+}
+
+.extra-stuff {
+  border-top: 2px black dashed;
+  margin-bottom: 50px;
+}
+
+input[type=submit] {
+  margin-left: 35%;
+  color: #cc0000;
+  font-size: 20px;
+  margin-top: 7%
+}
+
+a {
+  margin-left: 37%;
+}
+
+.error {
+  margin-left: 27%
+}
+
+.sorry {
+  margin-left: 5%;
+}
+
+.suggest {
+  margin-left: 4%;
+}
+
