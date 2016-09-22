@@ -1,36 +1,49 @@
 # ShotAdjuster
 
-### What It Is
-ShotAdjuster is a Ruby application to assist you with your golf game.  Questions are asked about your golf shot (e.g. "are you in the rough?, what direction is the wind blowing?, are you above or below the hole?").  Once entered, ShotAdjuster calcluates changes to your distance and recommends a club to swing.  This is meant to help the novice player who has trouble deciding which club to use in certain situations. 
+## What It Is
+ShotAdjuster is a Ruby application to assist you with your golf game.  Questions are asked about your golf shot (e.g. Are you in the rough? What direction is the wind blowing? Are you above or below the hole?).  Once entered, ShotAdjuster calcluates changes to your distance and recommends a club to swing.  This is meant to help the novice player who has trouble deciding which club to use in certain situations. 
 
-### Screen Shots
+## Screen Shots
 
 ![Entry Page] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-21%20at%203.53.03%20PM.png)
 ![Results Page] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-21%20at%204.15.47%20PM.png)
 
+## How It Works
+Currently the application needs to be run on a localhost using the Sinatra platform.  The user and golf club data is hard coded into the database to be run as a demo.  I used the Underground Weather API to obtain the local temperature and wind speed to be used for shot calculations.  Each question entry field has a yardage adjustment calculation built in behind it.  The calculations are taken from articles and blog posts on general rules on how to adjust your shot.  Once all calculations are in, the application returns an adjusted yardage to the user and matches a club for that yardage.      
 
+## Technologies Used
+- Ruby
+- Sinatra
+- ActiveRecord
+- PostgreSQL
+- Weather Underground API - https://www.wunderground.com/weather/api/
 
-You can choose whomever you would like to work with for this challenge. You should work by yourself.
+## Installation
 
-Day 1 of phase 2 is the first day you can and should start working on your passion project. By Week 6 Wednesday, you should have reached MVP for your passion project. What you present and produce is considered in moving into phase 3. It is part of your overall assessment of how much you learned in phase 2.
+### In terminal:
+##### Clone the repo:
 
-You've learned a lot in phase 2: Sinatra, Active Record, JavaScript, Agile, and much more. Each of these tools is useful in its own right, but together, they give you something much more powerful — the ability to build a web application from nothing.
+    git clone https://github.com/lukin41280/ShotAdjuster.git
+    
+##### Set up environment:
 
-For this challenge, your assignment is to build something. It can be as practical or trivial as you would want, as long as it is a 100% functional, full-stack web application.
+    bundle install
+    bundle exec rake db:create
+    bundle exec rake db:migrate
+    bundle exec rake db:seed
+    
+##### Run the localhost server:
 
-You can build anything you want, provided that it meets the following requirements:
+    shotgun
+    
+### Open your browser and navigate to:
 
-- It has a database
-- Construct a controller that has at least 1 RESTful resource
-- It uses an API (what does this mean?! explore!)
-- It is styled
-- It utilizes JavaScript
-- It is deployed to Heroku
+- http://localhost:9393/
+    
+Now you will be ready to test out the app.
 
-Once you've come up with an idea, get one of your teachers to approve it.
-
-### Resources
-- [List of Public API's](https://www.publicapis.com/)
-- [Mashape - List of API's](https://www.mashape.com/)
-- [Programmable Web](http://www.programmableweb.com/)
-- [Postman - REST Client](https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+## Works In Progress
+- Add register and login feature 
+- Deploy application to online server
+- Add geolocation feature so user does not have to enter city and state
+- Stretch: Convert to a mobile app 
