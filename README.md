@@ -5,8 +5,7 @@ ShotAdjuster is a Ruby application to assist you with your golf game.  Questions
 
 ## Screen Shots
 
-![Entry Page] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-21%20at%203.53.03%20PM.png)
-![Results Page] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-21%20at%204.15.47%20PM.png)
+![Entry and results pages] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-22%20at%2011.06.54%20AM.png)
 
 ## How It Works
 Currently the application needs to be run on a localhost using the Sinatra platform.  The user and golf club data is hard coded into the database to be run as a demo.  I used the Underground Weather API to obtain the local temperature and wind speed to be used for shot calculations.  Each question entry field has a yardage adjustment calculation built in behind it.  The calculations are taken from articles and blog posts on general rules on how to adjust your shot.  Once all calculations are in, the application returns an adjusted yardage to the user and matches a club for that yardage.      
