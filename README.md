@@ -36,9 +36,10 @@ Currently the application needs to be run on a localhost using the Sinatra platf
 
     shotgun
     
-### Open your browser and navigate to:
-
-- http://localhost:9393/
+### In your browser:
+Copy and paste into the URL:
+    
+    http://localhost:9393/
     
 Now you will be ready to test out the app.
 
