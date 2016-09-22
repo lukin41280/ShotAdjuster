@@ -1,10 +1,15 @@
-### Build Something Beautiful & Meaningful
+# ShotAdjuster
 
-#### Learning Competencies
-  * Building a web application from scratch
-  * Managing the development process
+### What It Is
+ShotAdjuster is a Ruby application to assist you with your golf game.  Questions are asked about your golf shot (e.g. "are you in the rough?, what direction is the wind blowing?, are you above or below the hole?").  Once entered, ShotAdjuster calcluates changes to your distance and recommends a club to swing.  This is meant to help the novice player who has trouble deciding which club to use in certain situations. 
 
-#### Summary
+### Screen Shots
+
+![Entry Page] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-21%20at%203.53.03%20PM.png)
+![Results Page] (https://github.com/lukin41280/ShotAdjuster/blob/master/Screen%20Shot%202016-09-21%20at%204.15.47%20PM.png)
+
+
+
 You can choose whomever you would like to work with for this challenge. You should work by yourself.
 
 Day 1 of phase 2 is the first day you can and should start working on your passion project. By Week 6 Wednesday, you should have reached MVP for your passion project. What you present and produce is considered in moving into phase 3. It is part of your overall assessment of how much you learned in phase 2.
