@@ -43,6 +43,7 @@ Copy and paste into the URL:
 Now you will be ready to test out the app.
 
 ## Works In Progress
+- Refactor code to seperate concerns
 - Add register and login feature 
 - Deploy application to online server
 - Add geolocation feature so user does not have to enter city and state
