@@ -24,6 +24,6 @@ group :test do
 end
 
 group :test, :development do
-  gem 'factory_girl'
+  gem 'factory_girl', :require => false
   gem 'faker'
 end
