@@ -7,7 +7,6 @@ describe Club do
   describe "new club" do
   	
 	  it "should have a name" do 
-	  	binding.pry
 	     @new_club = Club.create!(name: "2Wood")
 
 	     expect(@new_club.name).to eq "2Wood"
