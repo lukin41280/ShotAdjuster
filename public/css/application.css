@@ -13,7 +13,7 @@
 }*/
 
 body {
-  background-image: url("/images/gball.jpg");
+  /*background-image: url("/images/gball.jpg");*/
   padding-left: 30px;
   font-family: courier;
   width: 650px;
@@ -38,6 +38,10 @@ body {
 
 a {
   font-size: 50px;
+}
+
+.container {
+  background-color: green;
 }
 
 /*<%= @yardage_adj.to_i %>
