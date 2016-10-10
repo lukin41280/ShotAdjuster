@@ -1,8 +1,8 @@
 
 
 .title {
-  margin-left: 20%;
-  margin-right: 17%;
+  /*margin-left: 20%;
+  margin-right: 17%;*/
   margin-bottom: 5px;
   font-family: courier;
   font-size: 80px;
@@ -14,31 +14,31 @@ body {
   padding: 50px;
   font-family: courier;
   width: 925px;
-  border-right: 2px black solid
+  /*border-right: 2px black solid*/
 }
 
 .yard-heading {
-  font-size: 30px;
-  padding-left: 90px;
+  font-size: 60px;
+  /*padding-left: 90px;*/
 }
 
 .yard-adj {
   font-size: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding-left: 250px;
+  /*padding-left: 250px;*/
 }
 
 .yard-act {
   font-size: 125px;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding-left: 300px;
+  /*padding-left: 300px;*/
 }
 
 a {
   font-size: 50px;
-  padding-left: 125px;
+  /*padding-left: 125px;*/
 }
 
 .extra-stuff {
@@ -49,13 +49,19 @@ a {
 .motto {
   /*padding-top: -50px;*/
   padding-bottom: 25px;
-  font-size: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
+  font-size: 20px;
+ /* margin-left: 10%;
+  margin-right: 10%;*/
   color: #cc0000;
 }
 
+div {
+  font-size: 40px;
+}
 
+/*input {
+  border: 1px solid #cc0000;
+}*/
 /*<%= @yardage_adj.to_i %>
 <%= @yardage_orig %>
 <h3><u>The current weather factors for <%= @city %>, <%= @state %></u></h3>

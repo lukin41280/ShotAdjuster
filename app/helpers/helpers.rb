@@ -26,6 +26,11 @@ end
 # Elevation method - for every 1ft above/below target: (+/-) .5yds >150 yards out,
 # (+/-) .25yds 150-130 yards out, (+/-) .1yds <130 yards out
 def elevation(feet, elevation, yardage)
+  
+  if elevation == "default"
+    feet = 0.01
+  end
+  #this changes yard adjustment to negative impact
   if elevation == "above"
     feet = feet * -1
   end
@@ -45,6 +50,9 @@ end
 # for diagonal wind in the face: add amounts above, but take half the values
 # subtract half the values for wind diagonally in the back
 def wind(mph, yardage, direction)
+  if direction == "default"
+    wind_change = 0
+  end
   if direction == "inface"
     if yardage > 200.0
       wind_change = mph

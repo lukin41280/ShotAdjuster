@@ -3,60 +3,55 @@
         <form action="/clubs" method="POST">
             Where are you playing?</label><br><br>
             <label class="city" for=city>City:</label>
-            <input class="city" type="text" name="city">
+            <input class="city" type="text" name="city"><br>
             <label class="city" for=state>State:</label>
             <input class="city" type="text" name="state"><br><br>
             <label for="distance">Distance to flag:</label>
             <input type="text" name="distance"><br><br>
-            <label for="elevation">Are you above, below, or level with the green?</label>
+            <label for="elevation">Is the green above, below, or level with you?</label>
             <select name="elevation">
-                <option value="default"></option>
-                <option value="level">Level</option>
+                <option value="default">Level</option>
                 <option value="above">Above</option>
                 <option value="below">Below</option>
             </select><br><br>
             <label for="feet">By how many feet roughly?</label>
-            <input type="text" name="feet"><br><br>
+            <input type="text" name="feet" value="0"><br><br>
             <label for="direction">What direction is the wind blowing</label>
             <select name="direction">
-                <option value="default"></option>
+                <option value="default">N/A</option>
                 <option value="inface">In the face</option>
                 <option value="behind">Behind me</option>
                 <option value="partfront">Partially in the face</option>
                 <option value="partbehind">Partially behind me</option>
             </select><br><br>
-            <label for="slope">Is your stance downhill, uphill, or even?</label>
+            <label for="slope">Is your lie downhill, uphill, or even?</label>
             <select name="slope">
-                <option value="default"></option>
-                <option value="even">Even</option>
+                <option value="default">Even</option>
                 <option value="downhill">Downhill</option>
                 <option value="uphill">Uphill</option>
             </select><br><br>
             <label for="rough">Are you in the rough?</label>
             <select name="rough">
-                <option value="default"></option>
-                <option value="no">No</option>
+                <option value="default">No</option>
                 <option value="yes">Yes</option>
             </select><br><br>
             <label for="rough">If 'yes' are you Sitting Up, Partially Buried,<br> or Completely Buried?</label>
             <select name="rough" default="">
-                <option value="default"></option>
+                <option value="default">N/A</option>
                 <option value="up">Sitting Up</option>
                 <option value="part">Partially Buried</option>
                 <option value="buried">Completely Buried</option>
             </select><br><br>
             <label for="rain">Is it raining or wet out?</label>
             <select name="rain">
-                <option value="default"></option>
-                <option value="no">No</option>
+                <option value="default">No</option>
                 <option value="yes">Yes</option>
             </select><br><br>
             <label for="bunker">Are you in a bunker?</label>
             <select name="bunker">
-                <option value="default"></option>
-                <option value="no">No</option>
+                <option value="default">No</option>
                 <option value="yes">Yes</option>
             </select><br><br>
-            <input type="submit" value="Tell Me my Club!"><br><br>
+            <input type="submit" value="Tell Me My Yardage!"><br><br>
         </form>
 </div>
