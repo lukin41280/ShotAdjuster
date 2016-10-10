@@ -1,16 +1,13 @@
-/*html {
-  background-image: url("/images/grass.jpg");
-  width: 100%;
-}
+
 
 .title {
   margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: -18px;
+  margin-right: 17%;
+  margin-bottom: 5px;
   font-family: courier;
-  font-size: 60px;
-  padding-top: 25px;
-}*/
+  font-size: 80px;
+  padding-top: 5px;
+}
 
 body {
   background-image: url("/images/gball.jpg");
@@ -22,27 +19,42 @@ body {
 
 .yard-heading {
   font-size: 30px;
-  font
+  padding-left: 90px;
 }
 
 .yard-adj {
   font-size: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-left: 250px;
 }
 
 .yard-act {
   font-size: 125px;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-left: 300px;
 }
 
 a {
   font-size: 50px;
+  padding-left: 125px;
 }
 
-.container {
+.extra-stuff {
   
+  margin-top: 150px;
+}
+
+.motto {
+  /*padding-top: -50px;*/
+  padding-bottom: 25px;
+  font-size: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #cc0000;
+}
+
 
 /*<%= @yardage_adj.to_i %>
 <%= @yardage_orig %>
@@ -50,14 +62,9 @@ a {
   <p>Temperature:  <%= @temp %> degrees F</p>
   <p>Wind Speed:   <%= @wind %> mph</p><br>*/
 
-/*.motto {
-  padding-top: -50px;
-  padding-bottom: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
-  color: #cc0000;
-}
 
+
+/*
 .club {
   font-size: 50px;
 
@@ -77,10 +84,7 @@ a {
   font-size: 60px
 }
 
-.extra-stuff {
-  border-top: 2px black dashed;
-  margin-bottom: 50px;
-}
+
 
 input[type=submit] {
   margin-left: 35%;
