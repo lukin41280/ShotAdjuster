@@ -49,6 +49,14 @@ div {
   font-size: 40px;
 }
 
+.tell-me {
+  margin-top: 50px;
+  color: #cc0000;
+  font-size: 75px;
+  border: 5px solid #cc0000;
+  border-radius: 5px;
+}
+
 /*holding spot for weather info view
 <h3><u>The current weather factors for <%= @city %>, <%= @state %></u></h3>
   <p>Temperature:  <%= @temp %> degrees F</p>
