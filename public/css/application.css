@@ -17,6 +17,7 @@ body {
   padding: 50px;
   font-family: courier;
   width: 925px;
+  border-right: 2px black solid
 }
 
 .yard-heading {
