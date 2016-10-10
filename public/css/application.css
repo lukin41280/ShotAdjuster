@@ -13,10 +13,10 @@
 }*/
 
 body {
-  /*background-image: url("/images/gball.jpg");*/
-  padding-left: 30px;
+  background-image: url("/images/gball.jpg");
+  padding: 50px;
   font-family: courier;
-  width: 650px;
+  width: 925px;
 }
 
 .yard-heading {
@@ -41,8 +41,7 @@ a {
 }
 
 .container {
-  background-color: green;
-}
+  
 
 /*<%= @yardage_adj.to_i %>
 <%= @yardage_orig %>
