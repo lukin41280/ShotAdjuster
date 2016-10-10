@@ -7,7 +7,14 @@
             <label class="city" for=state>State:</label>
             <input class="city" type="text" name="state"><br><br>
             <label for="distance">Distance to flag:</label>
-            <input type="text" name="distance"><br><br>
+            <select name="distance">
+            <option value="default">50</option>
+                <% yards = 51 %>
+                <% 200.times do %>
+                    <option><%= yards %></option>
+                    <% yards += 1 %>
+                <% end %>
+            </select><br><br>
             <label for="elevation">Is the green above, below, or level with you?</label>
             <select name="elevation">
                 <option value="default">Level</option>
@@ -15,7 +22,14 @@
                 <option value="below">Below</option>
             </select><br><br>
             <label for="feet">By how many feet roughly?</label>
-            <input type="text" name="feet" value="0"><br><br>
+            <select name="feet">
+                <option value="default">0</option>
+                <% feet = 5 %>
+                <% 20.times do %>
+                    <option><%= feet %></option>
+                    <% feet += 5 %>
+                <% end %>
+            </select><br><br>
             <label for="direction">What direction is the wind blowing</label>
             <select name="direction">
                 <option value="default">N/A</option>
