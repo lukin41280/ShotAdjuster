@@ -1,26 +1,14 @@
 <div class="container">
 
-  <% if @adj_club == "none" %>
-    <h2 class="sorry">Sorry, you do not have a club for this distance<h2>
-    <h3 class="error">Play your shot to <%= @yardage_adj.to_i %> yards</h3>
-  <% else %>
-    <div class="result">
-      <h2 class="suggest">I suggest you use your</h2>
-      <h1 class="club"><%= @adj_club %><br></h1>
-    </div>
-  <% end %>
 
   <div class="extra-stuff">
-    <h3>Your adjusted yardage:</h3>
-    <p><%= @yardage_adj.to_i %></p><br>
-    <h3>Actual yardage:</h3>
-    <p><%= @yardage_orig %></p><br>
-    <p>On perfect conditions you would use your: <%= @norm_club %></p>
+    <p class="yard-heading">Your adjusted yardage:</p>
+    <p class="yard-adj">157</p><br>
+    <p class="yard-heading">Actual yardage:</p>
+    <p class="yard-act">143</p><br>
   </div>
 
-  <h3><u>The current weather factors for <%= @city %>, <%= @state %></u></h3>
-  <p>Temperature:  <%= @temp %> degrees F</p>
-  <p>Wind Speed:   <%= @wind %> mph</p><br>
+  
 
   <a href='/'>Setup another shot</a><br><br>
 

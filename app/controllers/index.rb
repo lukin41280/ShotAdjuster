@@ -17,8 +17,8 @@ post "/clubs" do
   rain_change = rain(params[:rain])
   bunker_change = bunker(params[:bunker])
   @yardage_adj = @yardage_orig + temp_change + elevate_change + wind_change + slope_change + rough_change + rain_change + bunker_change
-  @norm_club = club_displayer(@yardage_orig)
-  @adj_club = club_displayer(@yardage_adj.to_i)
+  # @norm_club = club_displayer(@yardage_orig)
+  # @adj_club = club_displayer(@yardage_adj.to_i)
   erb :"/show"
 end
 

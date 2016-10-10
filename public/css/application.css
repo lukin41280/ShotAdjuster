@@ -1,4 +1,4 @@
-html {
+/*html {
   background-image: url("/images/grass.jpg");
   width: 100%;
 }
@@ -10,19 +10,43 @@ html {
   font-family: courier;
   font-size: 60px;
   padding-top: 25px;
-}
+}*/
 
 body {
   background-image: url("/images/gball.jpg");
   padding-left: 30px;
   font-family: courier;
-  width: 750px;
-  margin-left: 25%;
-  margin-right: 27%;
-  border-radius: 5%
+  width: 375px;
 }
 
-.motto {
+.yard-heading {
+  font-size: 30px;
+  font
+}
+
+.yard-adj {
+  font-size: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.yard-act {
+  font-size: 125px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a {
+  font-size: 50px;
+}
+
+/*<%= @yardage_adj.to_i %>
+<%= @yardage_orig %>
+<h3><u>The current weather factors for <%= @city %>, <%= @state %></u></h3>
+  <p>Temperature:  <%= @temp %> degrees F</p>
+  <p>Wind Speed:   <%= @wind %> mph</p><br>*/
+
+/*.motto {
   padding-top: -50px;
   padding-bottom: 25px;
   margin-left: 20%;
@@ -75,5 +99,5 @@ a {
 
 .suggest {
   margin-left: 4%;
-}
+}*/
 
