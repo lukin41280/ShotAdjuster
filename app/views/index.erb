@@ -8,12 +8,16 @@
             <input class="city" type="text" name="state"><br><br>
             <label for="distance">Distance to flag:</label>
             <select name="distance">
-            <option value="default">0</option>
                 <% yards = 50 %>
                 <% 201.times do %>
-                    <option><%= yards %></option>
+                    <% if yards == 150 %>
+                        <option selected="selected"><%= yards %></option>
+                    <% else %>
+                        <option><%= yards %></option>
+                    <% end %>
                     <% yards += 1 %>
                 <% end %>
+                <option value="selected">150</option>
             </select><br><br>
             <label for="elevation">Is the green above, below, or level with you?</label>
             <select name="elevation">
