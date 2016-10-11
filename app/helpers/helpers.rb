@@ -1,6 +1,6 @@
 
-def get_all_weather(city, state)
-  weather_api = "http://api.wunderground.com/api/28b90ef0eef8b2c8/conditions/q/#{state}/#{city}.json"
+def get_all_weather
+  weather_api = "http://api.wunderground.com/api/28b90ef0eef8b2c8/conditions/q/autoip.json"
   uri = URI(weather_api)
   net = Net::HTTP.get_response(uri)
   json = JSON.parse(net.body)
@@ -12,6 +12,10 @@ end
 
 def get_wind(all_weather)
   all_weather["current_observation"]["wind_mph"]
+end
+
+def get_location(all_weather)
+  all_weather["current_observation"]["display_location"]["full"]
 end
 
 def temperature(degrees)

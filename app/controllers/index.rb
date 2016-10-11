@@ -1,12 +1,16 @@
 get "/" do
+  @local_weather = get_all_weather
+  @temp = get_temp(@local_weather)
+  @wind = get_wind(@local_weather)
+  @location = get_location(@local_weather)
   erb :"index"
 end
 
-post "/clubs" do
+post "/result" do
   @yardage_orig = params[:distance].to_i
   @city = params[:city]
   @state = params[:state]
-  @weather = get_all_weather(@city, @state)
+  @weather = get_all_weather
   @temp = get_temp(@weather)
   @wind = get_wind(@weather)
   temp_change = temperature(@temp)
@@ -17,11 +21,9 @@ post "/clubs" do
   rain_change = rain(params[:rain])
   bunker_change = bunker(params[:bunker])
   @yardage_adj = @yardage_orig + temp_change + elevate_change + wind_change + slope_change + rough_change + rain_change + bunker_change
-  # @norm_club = club_displayer(@yardage_orig)
-  # @adj_club = club_displayer(@yardage_adj.to_i)
-  erb :"/show"
+  erb :"show"
 end
 
-get "/show" do
-  erb :'/show'
-end
+# get "/show" do
+#   erb :'/show'
+# end
