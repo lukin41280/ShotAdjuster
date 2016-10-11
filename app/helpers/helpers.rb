@@ -32,18 +32,19 @@ end
 def elevation(feet, elevation, yardage)
   
   if elevation == "default"
-    feet = 0.01
-  end
+    elevate_change = 0
+  else
   #this changes yard adjustment to negative impact
-  if elevation == "above"
-    feet = feet * -1
-  end
-  if yardage > 150.0
-    elevate_change = feet * 0.5
-  elsif yardage <= 150.0 && yardage >= 130.0
-    elevate_change = feet * 0.25
-  elsif yardage < 130.0
-    elevate_change = feet * 0.13
+    if elevation == "above"
+      feet = feet * -1
+    end
+    if yardage > 150.0
+      elevate_change = feet * 0.5
+    elsif yardage <= 150.0 && yardage >= 130.0
+      elevate_change = feet * 0.25
+    elsif yardage < 130.0
+      elevate_change = feet * 0.13
+    end
   end
   elevate_change
 end

@@ -55,9 +55,7 @@ div {
   font-size: 50px;
 }
 
-/*holding spot for weather info view
-<h3><u>The current weather factors for <%= @city %>, <%= @state %></u></h3>
-  <p>Temperature:  <%= @temp %> degrees F</p>
-  <p>Wind Speed:   <%= @wind %> mph</p><br>*/
-
+.weather {
+  font-size: 12px;
+}
 

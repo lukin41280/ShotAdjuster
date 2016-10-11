@@ -1,9 +1,9 @@
 <div class="container">
-    <h3><u>The current weather factors for <%= @location %></u></h3>
-        <p>Temperature:  <%= @temp %>°</p>
-        <p>Wind Speed:   <%= @wind %> mph</p><br><br>
+    <h5>Current weather</h5>
+        <p class="weather"><%= @location %></p>
+        <p class="weather">Temp: <%= @temp %>°  Wind: <%= @wind %> mph</p>
     <h3>Enter your details below</h3>
-        <form action="/clubs" method="POST">
+        <form action="/result" method="POST">
             <label for="distance">Distance to flag:</label>
             <select name="distance">
                 <% yards = 50 %>
