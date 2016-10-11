@@ -4,6 +4,10 @@
         <p class="weather">Temp: <%= @temp %>°  Wind: <%= @wind %> mph</p>
     <h3>Enter your details below</h3>
         <form action="/result" method="POST">
+            <label class="city" for=city>City:</label>
+            <input class="city" type="text" name="city">
+            <label class="city" for=state>State:</label>
+            <input class="city" type="text" name="state"><br><br>
             <label for="distance">Distance to flag:</label>
             <select name="distance">
                 <% yards = 50 %>

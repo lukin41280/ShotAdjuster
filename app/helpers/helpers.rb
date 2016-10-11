@@ -1,6 +1,6 @@
 
 def get_all_weather
-  weather_api = "http://api.wunderground.com/api/28b90ef0eef8b2c8/geolookup/q/autoip.json"
+  weather_api = "https://cors-anywhere.herokuapp.com/http://api.wunderground.com/api/28b90ef0eef8b2c8/geolookup/q/autoip.json"
   uri = URI(weather_api)
   net = Net::HTTP.get_response(uri)
   json = JSON.parse(net.body)
