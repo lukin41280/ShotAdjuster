@@ -15,7 +15,7 @@ def get_wind(all_weather)
 end
 
 def get_location(all_weather)
-  all_weather["current_observation"]["display_location"]["full"]
+  all_weather["location"]["zip"]
 end
 
 def temperature(degrees)

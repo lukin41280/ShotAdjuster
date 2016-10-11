@@ -1,8 +1,8 @@
 get "/" do
-  @local_weather = get_all_weather
-  @temp = get_temp(@local_weather)
-  @wind = get_wind(@local_weather)
-  @location = get_location(@local_weather)
+  @local_weather_json = get_all_weather
+  # @temp = get_temp(@local_weather)
+  # @wind = get_wind(@local_weather)
+  @location = get_location(@local_weather_json)
   erb :"index"
 end
 
