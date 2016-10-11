@@ -12,7 +12,7 @@ require 'net/http'
 require 'json'
 require 'uri'
 require 'pathname'
-
+require 'forecast_io'
 require 'pg'
 require 'active_record'
 require 'logger'
