@@ -21,8 +21,10 @@ post "/result" do
   @slope_change = slope(@slope)
   @rough = params[:rough]
   @rough_change = rough(@yardage_orig, @rough)
-  @rain_change = rain(params[:rain])
-  @bunker_change = bunker(params[:bunker])
+  @rain = params[:rain]
+  @rain_change = rain(@rain)
+  @bunker = params[:bunker]
+  @bunker_change = bunker(@bunker)
   @yardage_adj = @yardage_orig + @temp_change + @elevate_change + @wind_change + @slope_change + @rough_change+ @rain_change + @bunker_change
 
   erb :"show"
