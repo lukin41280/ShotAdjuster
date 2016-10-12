@@ -3,7 +3,7 @@
     <h3>Enter your details below</h3>
         <form action="/result" method="POST">
             <label class="city" for=city>City:</label>
-            <input class="city" type="text" name="city" value=<%= session[:city] %>>
+            <input class="city" type="text" name="city" value=<%= session[:city] %>><br>
             <label class="city" for=state>State:</label>
             <input class="city" type="text" name="state" value=<%= session[:state] %>><br><br>
             <label for="distance">Distance to flag:</label>
@@ -18,7 +18,7 @@
                     <% yards += 1 %>
                 <% end %>
             </select><br><br>
-            <label for="elevation">Is the green above, below, or level with you?</label>
+            <label for="elevation">Are you above, below, or level with the target?</label>
             <select name="elevation">
                 <option value="default">Level</option>
                 <option value="above">Above</option>

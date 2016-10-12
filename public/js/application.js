@@ -1,3 +1,4 @@
+// geolocation not working on ios8 and above.  not using at this time
 $(document).ready(function() {
   if (navigator.geolocation) {
   var timeoutVal = 10 * 1000 * 1000;
