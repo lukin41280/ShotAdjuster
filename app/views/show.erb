@@ -4,6 +4,11 @@
   <div class="extra-stuff">
     <p class="yard-heading">Your adjusted yardage:</p>
     <p class="yard-adj"><%= @yardage_adj.to_i %></p><br>
+    <% if @slope == "downhill" %>
+    	<p class="slope-lie">Aim a bit left and play the ball towards your back foot</p><br>
+    <% elsif @slope == "uphill" %>
+    	<p class="slope-lie">Aim a bit right and play the ball towards your front foot</p><br>
+ 	<% end %>
     <p class="yard-heading">Actual yardage:</p>
     <p class="yard-act"><%= @yardage_orig %></p><br>
   </div>
