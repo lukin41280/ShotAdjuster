@@ -111,16 +111,16 @@ def slope(hill_type)
 end
 
 
-# Rough method - for sitting up: add 5% to total yds, for 25% buried: add 10% to total yds, for half ball: add 20% to total
-def rough(depth)
-  if depth == "up"
-    rough_change = 0.05
-  elsif depth == "part"
-    rough_change = 0.10
-  elsif depth == "buried"
-    rough_change = 0.20
+# Rough method - for sitting up: add 5% to total yds, for partially buried: add 10% to total yds, for half ball: add 20% to total
+def rough(distance, depth)
+  if depth == "sitting up"
+    rough_change = 0.05 * distance
+  elsif depth == "partially buried"
+    rough_change = 0.10 * distance
+  elsif depth == "completely buried"
+    rough_change = 0.20 * distance
   else
-    rough_change = 0
+    rough_change = 0.0
   end
   rough_change
 end
