@@ -12,7 +12,6 @@ post "/result" do
   @weather = get_all_weather(@city, @state)
   if good_location?(@weather) == false
     session[:alert] = "Please enter a valid city and state"
-    
     redirect "/"
   else
     session[:alert] = nil

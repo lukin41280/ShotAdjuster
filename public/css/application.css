@@ -60,6 +60,9 @@ div {
 }
 
 .alert {
-  color: #cc0000;
+  color: orange;
 }
 
+.factors {
+  font-size: 12px;
+}
