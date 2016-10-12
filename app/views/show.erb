@@ -11,7 +11,7 @@
   <a href='/'>Setup another shot</a><br><br>
   <h3>Factors</h3>
   <p>Temperature (<%= @temp %>°): <%= @temp_change.to_i %> yards </p>
-  <p>Elevation: <%= @elevate_change.to_i %> yards </p>
+  <p>Elevation (<%= @elevation == "level" ? @elevation : "#{@feet}ft #{@elevation}" %>): <%= @elevate_change.to_i %> yards </p>
   <p>Wind: <%= @wind_change.to_i %> yards </p>
   <p>Stance: <%= @slope_change.to_i %> yards </p>
   <p>Rough: <%= @rough_change.to_i %> yards </p>

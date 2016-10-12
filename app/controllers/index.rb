@@ -16,7 +16,10 @@ post "/result" do
   @temp = get_temp(@weather)
   @wind = get_wind(@weather)
   @temp_change = temperature(@temp)
-  @elevate_change = elevation(params[:feet].to_i, params[:elevation], @yardage_orig)
+  @elevation = params[:elevation]
+  @feet = params[:feet].to_i
+  @elevate_change = elevation(@feet, @elevation, @yardage_orig)
+
   @wind_change = wind(@wind, @yardage_orig, params[:direction])
   @slope_change = slope(params[:slope])
   @rough_change = rough(params[:rough])
