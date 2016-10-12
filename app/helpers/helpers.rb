@@ -6,6 +6,15 @@ def get_all_weather(city, state)
   json = JSON.parse(net.body)
 end
 
+#if json sends back an error field, location is invalid
+def good_location?(all_weather)
+  if all_weather["response"]["error"] != nil
+    false
+  else
+    true
+  end
+end
+
 def get_temp(all_weather)
   all_weather["current_observation"]["temp_f"]
 end

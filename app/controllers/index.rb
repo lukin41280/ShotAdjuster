@@ -1,4 +1,5 @@
 get "/" do
+  
   erb :"index"
 end
 
@@ -9,6 +10,13 @@ post "/result" do
   @state = params[:state]
   session[:state] = @state
   @weather = get_all_weather(@city, @state)
+  if good_location?(@weather) == false
+    session[:alert] = "Please enter a valid city and state"
+    
+    redirect "/"
+  else
+    session[:alert] = nil
+  end
   @temp = get_temp(@weather)
   @wind = get_wind(@weather)
   @temp_change = temperature(@temp)

@@ -1,12 +1,15 @@
 <div class="container">
     
+    
+      
     <h3>Enter your details below</h3>
+        <p class="alert"><%= session[:alert] %></p>
         <form action="/result" method="POST">
-            <label class="city" for=city>City:</label>
+            <label class="city" for=city>-City:</label><br>
             <input class="city" type="text" name="city" value=<%= session[:city] %>><br>
-            <label class="city" for=state>State:</label>
+            <label class="city" for=state>-State:</label><br>
             <input class="city" type="text" name="state" value=<%= session[:state] %>><br><br>
-            <label for="distance">Distance to flag:</label>
+            <label for="distance">-Distance to flag:</label><br>
             <select name="distance">
                 <% yards = 50 %>
                 <% 201.times do %>
@@ -18,13 +21,13 @@
                     <% yards += 1 %>
                 <% end %>
             </select><br><br>
-            <label for="elevation">Are you Above, Below, or Level with the target?</label>
+            <label for="elevation">-Are you Above, Below, or Level with the target?</label><br>
             <select name="elevation">
                 <option value="level">Level</option>
                 <option value="above">Above</option>
                 <option value="below">Below</option>
             </select><br><br>
-            <label for="feet">By how many feet roughly?</label>
+            <label for="feet">-By how many feet roughly?</label><br>
             <select name="feet">
                 <option value="default">0</option>
                 <% feet = 5 %>
@@ -33,7 +36,7 @@
                     <% feet += 5 %>
                 <% end %>
             </select><br><br>
-            <label for="direction">What direction is the wind blowing?</label>
+            <label for="direction">-What direction is the wind blowing?</label><br>
             <select name="direction">
                 <option value="n/a">N/A</option>
                 <option value="inface">In the face</option>
@@ -41,26 +44,25 @@
                 <option value="partfront">Partially in the face</option>
                 <option value="partbehind">Partially behind me</option>
             </select><br><br>
-            <label for="slope">Is your stance sloped Downhill, Uphill, or Level?</label>
+            <label for="slope">-Is your stance sloped Downhill, Uphill, or Level?</label><br>
             <select name="slope">
                 <option value="level">Level</option>
                 <option value="downhill">Downhill</option>
                 <option value="uphill">Uphill</option>
             </select><br><br>
-            
-            <label for="rough">If you are in the rough, are you Sitting Up, Partially Buried, or Completely Buried?</label>
+            <label for="rough">-If you are in the rough, are you Sitting Up, Partially Buried, or Completely Buried?</label><br>
             <select name="rough">
                 <option value="n/a">N/A</option>
                 <option value="sitting up">Sitting Up</option>
                 <option value="partially buried">Partially Buried</option>
                 <option value="completely buried">Completely Buried</option>
             </select><br><br>
-            <label for="rain">Is it raining or wet out?</label>
+            <label for="rain">-Is it raining or wet out?</label><br>
             <select name="rain">
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
             </select><br><br>
-            <label for="bunker">Are you in a bunker?</label>
+            <label for="bunker">-Are you in a bunker?</label><br>
             <select name="bunker">
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
