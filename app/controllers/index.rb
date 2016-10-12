@@ -1,5 +1,4 @@
 get "/" do
-  binding.pry
   # @local_weather_json = get_all_weather
   # @temp = get_temp(@local_weather)
   # @wind = get_wind(@local_weather)
