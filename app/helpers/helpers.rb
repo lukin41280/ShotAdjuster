@@ -1,6 +1,6 @@
 
-def get_all_weather
-  weather_api = "http://api.wunderground.com/api/28b90ef0eef8b2c8/geolookup/q/autoip.json"
+def get_all_weather(city, state)
+  weather_api = "http://api.wunderground.com/api/28b90ef0eef8b2c8/conditions/q/#{state}/#{city}.json"
   uri = URI(weather_api)
   net = Net::HTTP.get_response(uri)
   json = JSON.parse(net.body)
@@ -14,6 +14,7 @@ def get_wind(all_weather)
   all_weather["current_observation"]["wind_mph"]
 end
 
+# get_location is not being used right now due to issues with ios8 and above
 def get_location(all_weather)
   all_weather["location"]["zip"]
 end

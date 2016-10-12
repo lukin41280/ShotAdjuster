@@ -4,7 +4,7 @@ $(document).ready(function() {
   navigator.geolocation.getCurrentPosition(
     displayPosition, 
     displayError,
-    { enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0 }
+    { enableHighAccuracy: true, timeout: 5000, maximumAge: 60000 }
   );
 }
 else {

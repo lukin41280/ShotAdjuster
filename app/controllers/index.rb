@@ -1,16 +1,19 @@
 get "/" do
-  @local_weather_json = get_all_weather
+  binding.pry
+  # @local_weather_json = get_all_weather
   # @temp = get_temp(@local_weather)
   # @wind = get_wind(@local_weather)
-  @location = get_location(@local_weather_json)
+  # @location = get_location(@local_weather_json)
   erb :"index"
 end
 
 post "/result" do
   @yardage_orig = params[:distance].to_i
   @city = params[:city]
+  session[:city] = @city
   @state = params[:state]
-  @weather = get_all_weather
+  session[:state] = @state
+  @weather = get_all_weather(@city, @state)
   @temp = get_temp(@weather)
   @wind = get_wind(@weather)
   @temp_change = temperature(@temp)
