@@ -19,9 +19,10 @@ post "/result" do
   @elevation = params[:elevation]
   @feet = params[:feet].to_i
   @elevate_change = elevation(@feet, @elevation, @yardage_orig)
-
-  @wind_change = wind(@wind, @yardage_orig, params[:direction])
-  @slope_change = slope(params[:slope])
+  @direction = params[:direction]
+  @wind_change = wind(@wind, @yardage_orig, @direction)
+  @slope = params[:slope]
+  @slope_change = slope(@slope)
   @rough_change = rough(params[:rough])
   @rain_change = rain(params[:rain])
   @bunker_change = bunker(params[:bunker])

@@ -12,10 +12,10 @@
   <h3>Factors</h3>
   <p>Temperature (<%= @temp %>°): <%= @temp_change.to_i %> yards </p>
   <p>Elevation (<%= @elevation == "level" ? @elevation : "#{@feet}ft #{@elevation}" %>): <%= @elevate_change.to_i %> yards </p>
-  <p>Wind: <%= @wind_change.to_i %> yards </p>
-  <p>Stance: <%= @slope_change.to_i %> yards </p>
+  <p>Wind (<%= @wind %>mph <%= @direction %>): <%= @wind_change.to_i %> yards </p>
+  <p>Slope (<%= @slope %>): <%= @slope_change.to_i %> yards </p>
   <p>Rough: <%= @rough_change.to_i %> yards </p>
-  <p>Rain/Wet: <%= @rain_change.to_i %> yards </p>
-  <p>Bunker: <%= @bunker_change.to_i %> yards </p>
+  <p>Rain/Wet: <%= @rain_change %> yards </p>
+  <p>Bunker: <%= @bunker_change %> yards </p>
 
 </div>

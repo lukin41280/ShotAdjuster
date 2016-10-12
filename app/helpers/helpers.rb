@@ -56,7 +56,7 @@ end
 # for diagonal wind in the face: add amounts above, but take half the values
 # subtract half the values for wind diagonally in the back
 def wind(mph, yardage, direction)
-  if direction == "default"
+  if direction == "n/a"
     wind_change = 0
   end
   if direction == "inface"
@@ -98,14 +98,14 @@ def wind(mph, yardage, direction)
   wind_change
 end
 
-# Slope method - if hitting uphill add 10yds, if hitting downhill minus 10yds
+# Slope method - if hitting uphill add 10yds (take more club), if hitting downhill minus 10yds (take less club)
 def slope(hill_type)
   if hill_type == "uphill"
     slope_change = 10.0
   elsif hill_type == "downhill"
     slope_change = -10.0
   else
-    slope_change = 0
+    slope_change = 0.0
   end
   slope_change
 end
