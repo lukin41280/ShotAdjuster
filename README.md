@@ -1,7 +1,7 @@
 # ShotAdjuster
 
 ## What It Is
-ShotAdjuster is a Ruby web application to assist you with your golf game.  Questions are asked about your golf shot (e.g. Are you in the rough? What direction is the wind blowing? Are you above or below the hole?).  Once entered, ShotAdjuster calcluates changes to your distance and displays what yardage you should account for.  A list of the adjustments is provided to you as well on the results page.  This is an aid to help the novice player who has trouble deciding which club to use in certain situations. 
+ShotAdjuster is a Ruby web application to assist you with your golf game.  Questions are asked about your golf shot (e.g. Are you in the rough? What direction is the wind blowing? Are you above or below the hole?).  Once entered, ShotAdjuster calculates changes to your distance and displays what yardage you should account for.  A list of the adjustments is provided to you as well on the results page.  This is an aid to help the novice player who has trouble deciding which club to use in certain situations. 
 
 Try it out here: [ShotAdjuster Mobile](https://shotadjustermobile.herokuapp.com/) .  The app is meant to be run on your mobile phone's web browser.
 
