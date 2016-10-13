@@ -10,7 +10,7 @@ post "/result" do
   @state = params[:state]
   session[:state] = @state
   @weather = get_all_weather(@city, @state)
-  if good_location?(@weather) == false
+  if good_location?(@weather) == false 
     session[:alert] = "Please enter a valid city and state"
     redirect "/"
   else
