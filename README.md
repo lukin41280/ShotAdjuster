@@ -8,9 +8,9 @@ Try it out here: [ShotAdjuster Mobile](https://shotadjustermobile.herokuapp.com/
 ## How To Use
 At the start of your round, you will need to enter the city and state in which you are playing.  The location is then stored throughout your round to be used for the Weather Underground API (link below).  The API provides the current temperature and wind speed for making the necessary adjustments.  
 
-Enter your distance from target from a GPS applciation, rangefinder, course yard markers, etc.  U
+Enter your distance from target from a GPS applciation, rangefinder, course yard markers, etc.  
 
-pdate the fields that pertain to your shot situation.  Defaulted entries will not effect the yardage adjustment.  
+Update the fields that pertain to your shot situation.  Defaulted entries will not effect the yardage adjustment.  
 
 Hit "Tell Me My Yardage!" and get your results!
 
